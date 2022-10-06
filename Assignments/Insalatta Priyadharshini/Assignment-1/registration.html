@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            body{
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                font-size: 17px;;
+            }
+            form{
+                width:400px;
+                border:1px solid black;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            header{
+                font-size:20px;
+                padding:20px;
+                width:360px;
+                text-align: center;
+                background-color: #282A35;
+                color:white;
+            }
+            input,select{
+                width:200px;
+                height:25px;
+            }
+            .submit{
+                width:100px;
+                height:40px;
+                background-color:#04AA6D;
+                border:0px;
+                color:white;
+            }
+            .submit:hover{
+                box-shadow: 1px 1px 2px 1px grey;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <form>
+            <header>Registration Form</header><br>
+            <div>
+                <label for="name">Name</label><br><br>
+                <input type="text" id="name" placeholder="Enter Name" required/>
+            </div><br>
+            <div>
+                <label for="clg">College Name</label><br><br>
+                <input type="text" id="clg" placeholder="Enter College Name" required/>
+            </div><br>
+            <div>
+                <label for="dept">Department</label><br><br>
+                <select id="dept" >
+                    <option  value="CSE">CSE</option>
+                    <option  value="ECE">ECE</option>
+                    <option  value="EEE">EEE</option>
+                    <option  value="MECH">MECH</option>
+                    <option  value="CIVIL">CIVIL</option>
+                </select>
+            </div><br>
+            <div>
+                <label for="year">Year</label><br><br>
+                <select id="year" >
+                    <option  value="I">I</option>
+                    <option  value="II">II</option>
+                    <option  value="III">III</option>
+                    <option  value="IV">VI</option>
+                </select>
+            </div><br>
+            <div>
+                <label for="reg">Register Number</label><br><br>
+                <input type="number" id="reg" placeholder="Enter Register Number" required/>
+            </div><br>
+            <div>
+                <label for="phone">Phone Number</label><br><br>
+                <input type="number" id="phone" placeholder="Enter Phone Number" required/>
+            </div><br><br>
+            <div>
+                <input class="submit" type="submit" value="Register" required onclick="handleclick()"/>
+            </div><br>
+        </form>
+        <script>
+            function handleclick(){
+                let name = document.getElementById("name").value;
+                let clgName = document.getElementById("clg").value;
+                let dept = document.getElementById("dept").value;
+                let year = document.getElementById("year").value;
+                let reg = document.getElementById("reg").value;
+                let phone = document.getElementById("phone").value;
+                if(name == ''|| clgName==''||dept ==''||year==''||reg==''||phone==''){
+
+                }else{
+                    alert("Registration Successful");
+                }
+            }
+        </script>
+    </body>
+</html>
