@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            .box{
+                width:100px;
+                height:100px;
+                font-size: 50px;
+                text-align:center;
+                border:0px;
+            }
+            .xbox{
+                color:red;
+            }
+            .obox{
+                color:green;
+            }
+            table,td{
+                border:2px solid black;
+                border-collapse: collapse;
+            }
+            body{
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            header{
+                font-size:30px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>Tic tac toe Game</header><br>
+        <table>
+            <tr>
+                <td><input id="box1" type="text" class="box" onkeyup="handlechange1(event)"></td>
+                <td><input id="box2" type="text" class="box" onkeyup="handlechange2(event)"></td>
+                <td><input id="box3" type="text" class="box" onkeyup="handlechange3(event)"></td>
+            </tr>
+            <tr>
+                <td><input id="box4" type="text" class="box" onkeyup="handlechange4(event)"></td>
+                <td><input id="box5" type="text" class="box" onkeyup="handlechange5(event)"></td>
+                <td><input id="box6" type="text" class="box" onkeyup="handlechange6(event)"></td>
+            </tr>
+            <tr>
+                <td><input id="box7" type="text" class="box" onkeyup="handlechange7(event)"></td>
+                <td><input id="box8" type="text" class="box" onkeyup="handlechange8(event)"></td>
+                <td><input id="box9" type="text" class="box" onkeyup="handlechange9(event)"></td>
+            </tr>
+        </table>
+    </body>
+    <script>
+        function handlechange1(event){
+            let ele = document.getElementById("box1");
+            ele.value=='o'?ele.classList.add("obox"):ele.value=='x'?ele.classList.add("xbox"):ele.value='';
+        }
+        function handlechange2(event){
+            let ele = document.getElementById("box2");
+            ele.value=='o'?ele.classList.add("obox"):ele.value=='x'?ele.classList.add("xbox"):ele.value='';
+        }
+        function handlechange3(event){
+            let ele = document.getElementById("box3");
+            ele.value=='o'?ele.classList.add("obox"):ele.value=='x'?ele.classList.add("xbox"):ele.value='';
+        }
+        function handlechange4(event){
+            let ele = document.getElementById("box4");
+            ele.value=='o'?ele.classList.add("obox"):ele.value=='x'?ele.classList.add("xbox"):ele.value='';
+        }
+        function handlechange5(event){
+            let ele = document.getElementById("box5");
+            ele.value=='o'?ele.classList.add("obox"):ele.value=='x'?ele.classList.add("xbox"):ele.value='';
+        }
+        function handlechange6(event){
+            let ele = document.getElementById("box6");
+            ele.value=='o'?ele.classList.add("obox"):ele.value=='x'?ele.classList.add("xbox"):ele.value='';
+        }
+        function handlechange7(event){
+            let ele = document.getElementById("box7");
+            ele.value=='o'?ele.classList.add("obox"):ele.value=='x'?ele.classList.add("xbox"):ele.value='';
+        }
+        function handlechange8(event){
+            let ele = document.getElementById("box8");
+            ele.value=='o'?ele.classList.add("obox"):ele.value=='x'?ele.classList.add("xbox"):ele.value='';
+        }
+        function handlechange9(event){
+            let ele = document.getElementById("box9");
+            ele.value=='o'?ele.classList.add("obox"):ele.value=='x'?ele.classList.add("xbox"):ele.value='';
+        }
+    </script>
+</html>
