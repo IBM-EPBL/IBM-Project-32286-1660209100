@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            body{
+                font-family:Helvetica;
+                display:flex;
+                justify-content:center;
+                align-items:center;
+                flex-direction:column;
+            }
+            .resume{
+                padding:10px;
+                width:800px;
+                border:3px solid black;
+            }
+            div{
+                text-align:justify;
+            }
+            div,a,li{
+                padding:5px;
+            }
+            .header{
+                text-align:center;
+            }
+            .right{
+                margin-left:20px;
+            }
+            .file{
+                padding:10px;
+                margin:10px;
+            }
+            .submit{
+                text-align:center;
+            }
+        </style>
+    </head>
+    <body>
+        <form method="POST" action="/upload" enctype="multipart/form-data">
+            <label ><b>Upload Resume : </b></label>
+            <input class="file" name="file" type="file" value="Upload" /><br>
+            <div class="submit">
+                <input class="file" type="submit" value="Upload">
+            </div>
+        </form>
+        <form class="resume">
+            <div class="header">
+                <h1>Bharathi G</h1><hr>
+                <div><b>Address :</b>3/804-7,Zion Nagar Theri Road, Pudukottai,Thoothukudi-628103.Tamil Nadu. </div>
+                <div><b>Phone :</b>9626326941 </div>
+                <div><b>Email :</b>gbvelan2002@gmail.com</div>
+            </div>
+            <div>
+                <h2>Summary</h2>
+                <div class="right">A self-motivated, hard-working and positive student looking for a fresher position. I am looking to explore
+mycareer options in IT sector which provides an opportunity to expand my knowledge as a computer science
+graduate.
+                </div>
+            </div>
+            <div>
+                <h2>Education</h2>
+                <div class="right">
+                    <h3>Government College of Engineering, Tirunelveli</h3>
+                    <div>Bachelor of Engineering - BE, Computer Science</div>
+                    <div>2019 - 2023</div>
+                    <h3>CGPA : 9.22</h3>
+                </div>
+                <div class="right">
+                    <h3>St.Joseph's Matric Hr Sec School. Thoothukudi</h3>
+                    <div>HSC, Maths Biology</div>
+                    <div>Jun 2017 - Mar 2019</div>
+                    <h3>Percentage : 87.5%</h3>
+                </div>
+                <div class="right">
+                    <h3>St.Joseph's Matric Hr Sec School. Thoothukudi</h3>
+                    <div>SSC</div>
+                    <div>Jun 2016 - Mar 2017</div>
+                    <h3>Percentage : 97.5%</h3>
+                </div>
+            </div>
+            <div>
+                <h2>License And Certifications</h2>
+                <ul>
+                    <li>Responsive Web Design - freeCodeCamp</li>
+                    <li>Programming in Java - NPTEL</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Skills</h2>
+                <ul>
+                    <li>Java</li>
+                    <li>C</li>
+                    <li>Javascript</li>
+                    <li>Angular</li>
+                    <li>Node.js</li>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                </ul>
+            </div>
+            <div>
+                <h2>Projects</h2>
+                <div class="right">
+                    FACE MASK DETECTION using Python-Opencv - Photography
+ Detect the person who are not wearing mask in public places
+                </div>
+                <div class="right">
+                    Online Car Sells Website using Angular js
+ Website to sell/buy an old and brand new cars.
+
+                </div><br>
+            </div>
+            <div>
+                <h2>Hobbies</h2>
+                <ul>
+                    <li>Photography</li>
+                    <li>Planting Trees</li>
+                </ul>
+            </div>
+        </form>
+
+    </body>
+</html>
