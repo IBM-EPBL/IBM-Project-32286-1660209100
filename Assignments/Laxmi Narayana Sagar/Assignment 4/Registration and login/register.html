@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <style>
+            body{
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                font-size: 17px;;
+            }
+            form{
+                width:400px;
+                border:1px solid black;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+            }
+            header{
+                font-size:20px;
+                padding:20px;
+                width:360px;
+                text-align: center;
+                background-color: #282A35;
+                color:white;
+            }
+            input,select{
+                width:200px;
+                height:25px;
+            }
+            .submit{
+                width:100px;
+                height:40px;
+                background-color:#04AA6D;
+                border:0px;
+                color:white;
+            }
+            .submit:hover{
+                box-shadow: 1px 1px 2px 1px grey;
+            }
+        </style>
+    </head>
+    <body>
+        
+        <form action="login" method="post">
+            <header>Registration Form</header><br>
+            <div>
+                <label for="name">Name</label><br><br>
+                <input type="text" name="name" placeholder="Enter Name" required/>
+            </div><br>
+            <div>
+                <label for="dept">Department</label><br><br>
+                <select name="dept" id="dept" >
+                    <option  value="CSE">CSE</option>
+                    <option  value="ECE">ECE</option>
+                    <option  value="EEE">EEE</option>
+                    <option  value="MECH">MECH</option>
+                    <option  value="CIVIL">CIVIL</option>
+                </select>
+            </div><br>
+            <div>
+                <label for="email">Email ID</label><br><br>
+                <input type="email" name="email" placeholder="Enter Email Id" required/>
+            </div><br>
+            <div>
+                <label for="reg">Register Number</label><br><br>
+                <input type="number" name="reg" placeholder="Enter Register Number" required/>
+            </div><br>
+            <div>
+                <label for="phone">Phone Number</label><br><br>
+                <input type="number" name="phone" placeholder="Enter Phone Number" required/>
+            </div><br>
+            <div>
+                <label for="password">Password</label><br><br>
+                <input type="password" name="pass" placeholder="Enter Password" required/>
+            </div><br><br>
+            <div>
+                <input class="submit" type="submit" value="Register"/>
+            </div><br>
+        </form>
+    </body>
+</html>
