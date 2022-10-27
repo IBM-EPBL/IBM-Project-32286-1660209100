@@ -26,7 +26,7 @@
                 background-color: #282A35;
                 color:white;
             }
-            input,select{
+            input{
                 width:200px;
                 height:25px;
             }
@@ -51,35 +51,16 @@
                 <input type="text" id="name" placeholder="Enter Name" required/>
             </div><br>
             <div>
-                <label for="clg">College Name</label><br><br>
-                <input type="text" id="clg" placeholder="Enter College Name" required/>
+                <label for="qualif">Qualification</label><br><br>
+                <input type="text" id="qualif" placeholder="Enter Your Qualification" required/>
             </div><br>
             <div>
-                <label for="dept">Department</label><br><br>
-                <select id="dept" >
-                    <option  value="CSE">CSE</option>
-                    <option  value="ECE">ECE</option>
-                    <option  value="EEE">EEE</option>
-                    <option  value="MECH">MECH</option>
-                    <option  value="CIVIL">CIVIL</option>
-                </select>
+                <label for="age">Age</label><br><br>
+                <input type="number" id="age" placeholder="Enter Your Age" required/>
             </div><br>
             <div>
-                <label for="year">Year</label><br><br>
-                <select id="year" >
-                    <option  value="I">I</option>
-                    <option  value="II">II</option>
-                    <option  value="III">III</option>
-                    <option  value="IV">VI</option>
-                </select>
-            </div><br>
-            <div>
-                <label for="reg">Register Number</label><br><br>
-                <input type="number" id="reg" placeholder="Enter Register Number" required/>
-            </div><br>
-            <div>
-                <label for="phone">Phone Number</label><br><br>
-                <input type="number" id="phone" placeholder="Enter Phone Number" required/>
+                <label for="email">Email</label><br><br>
+                <input type="number" id="email" placeholder="Enter Email Id" required/>
             </div><br><br>
             <div>
                 <input class="submit" type="submit" value="Register" required onclick="handleclick()"/>
@@ -88,12 +69,10 @@
         <script>
             function handleclick(){
                 let name = document.getElementById("name").value;
-                let clgName = document.getElementById("clg").value;
-                let dept = document.getElementById("dept").value;
-                let year = document.getElementById("year").value;
-                let reg = document.getElementById("reg").value;
-                let phone = document.getElementById("phone").value;
-                if(name == ''|| clgName==''||dept ==''||year==''||reg==''||phone==''){
+                let qualif = document.getElementById("qualif").value;
+                let age = document.getElementById("age").value;
+                let email = document.getElementById("email").value;
+                if(name == ''|| qualif==''||age ==''||email==''){
 
                 }else{
                     alert("Registration Successful");
