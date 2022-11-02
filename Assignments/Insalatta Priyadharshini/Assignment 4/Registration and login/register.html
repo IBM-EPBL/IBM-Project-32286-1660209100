@@ -26,7 +26,7 @@
                 background-color: #282A35;
                 color:white;
             }
-            input{
+            input,select{
                 width:200px;
                 height:25px;
             }
@@ -44,40 +44,41 @@
     </head>
     <body>
         
-        <form>
+        <form action="login" method="post">
             <header>Registration Form</header><br>
             <div>
                 <label for="name">Name</label><br><br>
-                <input type="text" id="name" placeholder="Enter Name" required/>
+                <input type="text" name="name" placeholder="Enter Name" required/>
             </div><br>
             <div>
-                <label for="qualif">Qualification</label><br><br>
-                <input type="text" id="qualif" placeholder="Enter Your Qualification" required/>
+                <label for="dept">Department</label><br><br>
+                <select name="dept" id="dept" >
+                    <option  value="CSE">CSE</option>
+                    <option  value="ECE">ECE</option>
+                    <option  value="EEE">EEE</option>
+                    <option  value="MECH">MECH</option>
+                    <option  value="CIVIL">CIVIL</option>
+                </select>
             </div><br>
             <div>
-                <label for="age">Age</label><br><br>
-                <input type="number" id="age" placeholder="Enter Your Age" required/>
+                <label for="email">Email ID</label><br><br>
+                <input type="email" name="email" placeholder="Enter Email Id" required/>
             </div><br>
             <div>
-                <label for="email">Email</label><br><br>
-                <input type="number" id="email" placeholder="Enter Email Id" required/>
+                <label for="reg">Register Number</label><br><br>
+                <input type="number" name="reg" placeholder="Enter Register Number" required/>
+            </div><br>
+            <div>
+                <label for="phone">Phone Number</label><br><br>
+                <input type="number" name="phone" placeholder="Enter Phone Number" required/>
+            </div><br>
+            <div>
+                <label for="password">Password</label><br><br>
+                <input type="password" name="pass" placeholder="Enter Password" required/>
             </div><br><br>
             <div>
-                <input class="submit" type="submit" value="Register" required onclick="handleclick()"/>
+                <input class="submit" type="submit" value="Register"/>
             </div><br>
         </form>
-        <script>
-            function handleclick(){
-                let name = document.getElementById("name").value;
-                let qualif = document.getElementById("qualif").value;
-                let age = document.getElementById("age").value;
-                let email = document.getElementById("email").value;
-                if(name == ''|| qualif==''||age ==''||email==''){
-
-                }else{
-                    alert("Registration Successful");
-                }
-            }
-        </script>
     </body>
 </html>
