@@ -78,17 +78,18 @@
           </div>
         </nav>
         <img id="login-img" src="/static/img/bckgrd.jpg" alt="job image">
-        <div class="wrapper">
+        <form class="wrapper" method="post" action="/welcome">
             <h3>Login</h3>
+            <p>{{msg}} </p>
             <div>
               <label for="email">Email</label><br>
-              <input class="details" type="email" placeholder="Email">
+              <input class="details" type="email" name="email" placeholder="Email">
             </div>
             <div>
               <label for="password">Password</label><br>
-              <input class="details" type="password" placeholder="Password">
+              <input class="details" type="password" name="password" placeholder="Password">
             </div><br>
-            <button class="btn btn-clr">Login</button>
-        </div>
+            <input class="btn btn-clr" type="submit" value="Login">
+        </form>
     </body>
 </html>

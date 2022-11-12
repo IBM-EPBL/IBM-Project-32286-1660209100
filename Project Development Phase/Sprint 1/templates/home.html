@@ -22,6 +22,13 @@
           .bg-img{
             width:100vw;
             height:90vh;
+            position:absolute;
+            z-index:-1;
+          }
+          h3{
+            display:flex;
+            justify-content:center;
+            align-items:center;
           }
         </style>
     </head>
@@ -63,6 +70,7 @@
     </div>
   </nav>
           <img class="bg-img" src="/static/img/Job-Search-Checklist.png" alt="job image">
+          <h3>{{session.name}}</h3>
           <footer>
 
           </footer>
