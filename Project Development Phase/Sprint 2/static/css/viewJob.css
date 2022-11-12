@@ -1,0 +1,25 @@
+
+.align{
+    display:flex;
+    flex-direction:row;
+  }
+  .btn-seagreen{
+    color:white;
+    margin-right:5px;
+    margin-left:5px;
+    border:2px solid lightseagreen;
+  }
+  .btn-seagreen:hover{
+    color:white;
+    background-color: lightseagreen;
+  }
+
+  .focus{
+    background-color:rgb(102, 198, 193) ;
+    height: 700px;
+  }
+  
+  .card{
+    box-shadow:3px 3px 12px 10px rgb(59, 136, 136)
+  }
+  
