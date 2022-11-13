@@ -4,51 +4,12 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="/static/css/home.css">
-        <style>
-          #login-img{
-            width:100vw;
-            height:90vh;
-            position:absolute;
-            z-index: -1;
-          }
-          .wrapper{
-            height:80vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            color:white;
-          }
-          .details{
-            border:0px;
-            height:40px;
-            width:300px;
-            border-radius: 5px;
-          }
-          .btn-clr{
-            background-color: lightseagreen;
-          }
-          .btn-clr:hover{
-            background-color: darkcyan;
-          }
-          .btn-seagreen{
-            margin-right:5px;
-            margin-left:5px;
-            color:white;
-            border:2px solid lightseagreen;
-          }
-          .btn-seagreen:hover{
-            color:white;
-            background-color: lightseagreen;
-          }
-          a{
-            color:#282A35;
-          }
-        </style>
+        <link rel="stylesheet" href="/static/css/login.css" >
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
           <div class="container-fluid">
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -82,7 +43,7 @@
         <form class="wrapper" method="post" action="/welcome">
             <h3>Login</h3>
             <p>Haven't registered to our website yet <a href="#">Register Now</a></p>
-            <p>{{msg}} </p>
+            <p>{{session.msg}} </p>
             <div>
               <label for="email">Email</label><br>
               <input class="details" type="email" name="email" placeholder="Email">
