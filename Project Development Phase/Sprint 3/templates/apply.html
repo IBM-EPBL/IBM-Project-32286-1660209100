@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Apply Jobs</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="/static/css/apply.css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <nav class="navbar navbar-dark bg-dark">
+                  <div class="container-fluid">
+                    <a class="navbar-brand" href="#"  style="font-weight: bold">
+                      <img src="/static/img/job-icon.png" alt="" width="30" height="30" class="d-inline-block align-text-top">
+                      &nbsp  Job Hunter
+                    </a>
+                  </div>
+                  </nav>
+
+
+                    <form class="container-fluid justify-content-start" action="viewjobs">
+                      <i class="bi bi-file-person"></i>
+                      <button class="btn btn-seagreen me-2" type="submit">Back</button>
+                        &nbsp
+
+                    </form>
+
+                <form class="d-flex" >
+                  <input class="form-control me-2" type="search" placeholder="Search Jobs" aria-label="Search">
+                  <button class="btn btn-seagreen "   type="submit">Search</button>
+                </form>
+
+              </div>
+            </div>
+          </nav>
+<!--        <img id="login-img" src="/static/img/bckgrd.jpg" alt="job image">-->
+        <div class="container">
+            <form action="viewjobs" class="apply-container">
+                <h4>Application Details</h4>
+                <table>
+                    <tr>
+                        <td class="ele">Name</td>
+                        <td><input  class="fields" type="text" value="{{session.name}} "></td>
+                    </tr>
+                    <tr>
+                        <td class="ele">Email</td>
+                        <td><input class="fields" type="email" value="{{session.email}} "> </td>
+                    </tr>
+                    <tr>
+                        <td class="ele">Phone No</td>
+                        <td><input  class="fields" type="number"  ></td>
+                    </tr>
+                    <tr>
+                        <td class="ele">Company </td>
+                        <td><input class="fields" type="text" value="{{session.company}} "> </td>
+                    </tr>
+                    <tr>
+                        <td class="ele">Role </td>
+                        <td><input class="fields" type="text" value="{{session.title}} "> </td>
+                    </tr>
+                    <tr>
+                        <td class="ele">Skills </td>
+                        <td><input class="fields" type="text" value="{{session.skills}} "> </td>
+                    </tr>
+                    <tr>
+                        <td class="ele">Resume</td>
+                        <td><input type="file" value="Upload" ></td>
+                    </tr>
+
+                </table><br>
+                <input class="btn btn-submit" type="submit" value="Apply" onclick="myFun()">
+            </form>
+        </div>
+
+     <script>
+        function myFun(){
+           alert("Mail Send  Sucessfully");
+        }
+    </script>
+    </body>
+
+</html>
+

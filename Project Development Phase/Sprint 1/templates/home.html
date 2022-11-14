@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="/static/css/home.css">
+        <style>
+          .align{
+            display:flex;
+            flex-direction:row;
+          }
+          .btn-seagreen{
+            color:white;
+            margin-right:5px;
+            margin-left:5px;
+            border:2px solid lightseagreen;
+          }
+          .btn-seagreen:hover{
+            color:white;
+            background-color: lightseagreen;
+          }
+          .bg-img{
+            width:100vw;
+            height:90vh;
+            position:absolute;
+            z-index:-1;
+          }
+          h3{
+            display:flex;
+            justify-content:center;
+            align-items:center;
+          }
+        </style>
+    </head>
+    <body>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <nav class="navbar navbar-dark bg-dark">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#"  style="font-weight: bold">
+              <img src="/static/img/job-icon.png" alt="" width="30" height="30" class="d-inline-block align-text-top">
+              &nbsp  Job Hunter
+            </a>
+          </div>
+          </nav>
+
+
+            <div  class="container-fluid justify-content-start align" >
+                <form action="login">
+                    <button class="btn btn-seagreen me-2" type="submit">Login</button>
+                </form>
+                &nbsp
+                <form action="register">
+                    <button class="btn btn-seagreen me-2" type="submit" >Register</button>
+                </form>
+
+            </div>
+
+        <form class="d-flex" >
+          <input class="form-control me-2" type="search" placeholder="Search Jobs" aria-label="Search">
+          <button class="btn btn-seagreen "   type="submit">Search</button>
+        </form>
+
+      </div>
+    </div>
+  </nav>
+          <img class="bg-img" src="/static/img/Job-Search-Checklist.png" alt="job image">
+          <h3>{{session.name}}</h3>
+          <footer>
+
+          </footer>
+    </body>
+</html>

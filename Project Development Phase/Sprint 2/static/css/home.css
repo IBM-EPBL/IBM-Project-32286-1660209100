@@ -1,0 +1,25 @@
+.align{
+  display:flex;
+  flex-direction:row;
+}
+.btn-seagreen{
+  color:white;
+  margin-right:5px;
+  margin-left:5px;
+  border:2px solid lightseagreen;
+}
+.btn-seagreen:hover{
+  color:white;
+  background-color: lightseagreen;
+}
+.bg-img{
+  width:100vw;
+  height:90vh;
+  position:absolute;
+  z-index:-1;
+}
+h3{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}

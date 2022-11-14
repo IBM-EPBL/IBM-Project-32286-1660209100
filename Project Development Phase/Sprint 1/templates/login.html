@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="/static/css/home.css">
+        <style>
+          #login-img{
+            width:100vw;
+            height:90vh;
+            position:absolute;
+            z-index: -1;
+          }
+          .wrapper{
+            height:80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            color:white;
+          }
+          .details{
+            border:0px;
+            height:40px;
+            width:300px;
+            border-radius: 5px;
+          }
+          .btn-clr{
+            background-color: lightseagreen;
+          }
+          .btn-clr:hover{
+            background-color: darkcyan;
+          }
+          .btn-seagreen{
+            margin-right:5px;
+            margin-left:5px;
+            color:white;
+            border:2px solid lightseagreen;
+          }
+          .btn-seagreen:hover{
+            color:white;
+            background-color: lightseagreen;
+          }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container-fluid">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <nav class="navbar navbar-dark bg-dark">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"  style="font-weight: bold">
+                    <img src="/static/img/job-icon.png" alt="" width="30" height="30" class="d-inline-block align-text-top">
+                    &nbsp  Job Hunter
+                  </a>
+                </div>
+                </nav>
+
+
+                  <form class="container-fluid justify-content-start">
+                    <i class="bi bi-file-person"></i>
+                    <button class="btn btn-seagreen me-2" type="button">Login</button>
+                      &nbsp
+                    <button class="btn btn-seagreen me-2" type="button">Register</button>
+
+                  </form>
+
+              <form class="d-flex" >
+                <input class="form-control me-2" type="search" placeholder="Search Jobs" aria-label="Search">
+                <button class="btn btn-seagreen "   type="submit">Search</button>
+              </form>
+
+            </div>
+          </div>
+        </nav>
+        <img id="login-img" src="/static/img/bckgrd.jpg" alt="job image">
+        <form class="wrapper" method="post" action="/welcome">
+            <h3>Login</h3>
+            <p>{{msg}} </p>
+            <div>
+              <label for="email">Email</label><br>
+              <input class="details" type="email" name="email" placeholder="Email">
+            </div>
+            <div>
+              <label for="password">Password</label><br>
+              <input class="details" type="password" name="password" placeholder="Password">
+            </div><br>
+            <input class="btn btn-clr" type="submit" value="Login">
+        </form>
+    </body>
+</html>
