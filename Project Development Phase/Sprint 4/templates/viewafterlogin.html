@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Jobs</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/css/viewJob.css">
+    <script src="{{url_for('static', filename='js/viewjobs.js')}}"></script>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <nav class="navbar navbar-dark bg-dark">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#"  style="font-weight: bold">
+                  <img src="/static/img/job-icon.png" alt="" width="30" height="30" class="d-inline-block align-text-top">
+                  &nbsp  Job Hunter
+                </a>
+              </div>
+              </nav>
+
+
+                <div  class="container-fluid justify-content-start align" >
+                    <form action="welcome">
+                        <button class="btn btn-seagreen me-2" type="submit">Back</button>
+                    </form>
+
+
+                </div>
+
+            <form class="d-flex" >
+              <input class="form-control me-2" type="search" placeholder="Search Jobs" aria-label="Search" style="width:150px">
+              <button class="btn btn-seagreen "   type="submit">Search</button>
+            </form>
+
+          </div>
+        </div>
+      </nav>
+      <div class="wrapper" id="jobs">
+          <input id="val" type="hidden" value="{{session.result}}">
+      </div>
+  </body>
+</html>
