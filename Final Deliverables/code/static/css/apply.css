@@ -1,0 +1,114 @@
+#login-img{
+  width:100vw;
+  height:90vh;
+  position:absolute;
+  z-index: -1;
+  opacity:0.9;
+}
+#login-img{
+  width:100vw;
+  height:90vh;
+  position:absolute;
+  z-index: -1;
+}
+.wrapper{
+  height:80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color:white;
+}
+.details{
+  border:0px;
+  height:40px;
+  width:300px;
+  border-radius: 5px;
+}
+.btn-clr{
+  background-color: rgb(51, 204, 196);
+}
+.btn-clr:hover{
+  background-color: rgb(230, 238, 238);
+}
+.btn-seagreen{
+  margin-right:5px;
+  margin-left:5px;
+  color:white;
+  border:2px solid lightseagreen;
+}
+.btn-seagreen:hover{
+  color:white;
+  background-color: lightseagreen;
+}
+a{
+  color:rgb(40, 42, 53);
+}
+a:hover{
+  color:rgb(40, 42, 53);
+}
+.container{
+    font-size:18px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    margin-top:0px;
+    background-color:lightseagreen;
+    padding-bottom:50px;
+}
+.apply-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+#submit{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    border:1px solid black;
+}
+.ele{
+    width:100px;
+    color:black;
+}
+td{
+    width:400px;
+    height:70px;
+    color:white;
+}
+.fields{
+    color:black;
+    padding-left:10px;
+    width:350px;
+    height:50px;
+    border:2px solid black;
+    border-radius:5px;
+}
+.fields:hover{
+    background-color:#282A35;
+    color:white;
+}
+h4{
+    padding:20px;
+}
+.btn{
+    color:white;
+
+}
+.btn:hover{
+    color:white;
+    background-color: lightseagreen;
+    border:1px solid #282A35;
+}
+.btn-submit{
+    width:100px;
+    height:42px;
+    background-color:white;
+    color:black
+}
+.btn-submit:hover{
+    background-color:darkcyan;
+    border:0px;
+}

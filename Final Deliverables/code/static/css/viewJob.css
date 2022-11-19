@@ -1,0 +1,41 @@
+.title,.skills,.company{
+      border:0px;
+      width:250px;
+}
+.title{
+    font-weight:bold;
+    font-size:20px;
+}
+.skills{
+    padding-bottom:10px;
+}
+.btn-seagreen{
+  border:1px solid lightseagreen;
+  color:white;
+  margin-left:5px;
+  margin-right:5px;
+}
+.btn-seagreen:hover{
+  background-color: lightseagreen;
+  color:white;
+}
+.align{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrapper{
+  padding:10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.card{
+  margin:20px;
+  box-shadow:1px 1px 9px 1px #282A35;
+}
+.card:hover{
+    box-shadow:2px 2px 14px 2px #282A35;
+    color:white;
+}
